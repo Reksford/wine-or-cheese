@@ -1,9 +1,18 @@
 import './App.css';
 
+import Button from './components/button/button';
+import Display from './components/display/display';
+
 function App() {
+  let options = ["Wine", "Cheese"];
   return (
     <div className="App">
-      <h1>Place Holding Texts</h1>
+      <div className="Game">
+        <Display></Display>
+        {options.map((el) => <Button>{el}</Button>)}
+
+      </div>
+
     </div>
   );
 }
