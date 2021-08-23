@@ -1,0 +1,44 @@
+h1 {
+  color: black;
+  font-size: 1.7em
+}
+
+h3 {
+  color: black;
+  font-size: 1.5em;
+}
+
+.fade {
+  display: inline-block;
+  font-family: 'Dancing Script', cursive; serif;
+  animation: fadeIn linear 1.3s;
+  -webkit-animation: fadeIn linear 1.3s;
+  -moz-animation: fadeIn linear 1.3s;
+  -o-animation: fadeIn linear 1.3s;
+  -ms-animation: fadeIn linear 1.3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; font-size: 1.8em}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0; font-size: 1.8em}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0; font-size: 1.8em}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0; font-size: 1.8em}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0; font-size: 1.8em}
+  100% {opacity:1;}
+}
