@@ -1,0 +1,72 @@
+{
+  "storyA": {
+    "title": "Awaken in the Wilderness",
+    "body": "",
+    "options": ["storyAA", "storyAB"]
+  }
+  "storyAA": {
+    "title": "",
+    "body": "",
+    "options": ["storyAAA", "storyAAB"]
+  }
+  "storyAAA": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+  "storyAAB": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+  "storyAB": {
+    "title": "",
+    "body": "",
+    "options": ["storyABA", "storyABB"]
+  }
+  "storyABA": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+  "storyABB": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+  "storyB": {
+    "title": "Driving Down a Lonely Road",
+    "body": "",
+    "options": ["storyBA", "storyBB"]
+  }
+  "storyBA": {
+    "title": "",
+    "body": "",
+    "options": ["storyBAA", "storyBAB"]
+  }
+  "storyBAA": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+  "storyBAB": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+  "storyBB": {
+    "title": "",
+    "body": "",
+    "options": ["storyBBA", "storyBBB"]
+  }
+  "storyBBA": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+  "storyBBB": {
+    "title": "",
+    "body": "",
+    "options": null
+  }
+}
