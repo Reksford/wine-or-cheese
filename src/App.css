@@ -3,8 +3,8 @@
 .App {
   text-align: center;
   background-color: #330300;
-  text: #AA7D39;
-  text-shadow: 0px 0px 2px #000E0C;
+  color: #AA7D39;
+  text-shadow: 0px 0px 2px #170E00;
 }
 
 .App-logo {

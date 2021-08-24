@@ -1,16 +1,16 @@
 h1 {
-  color: black;
+  /* color: black; */
   font-size: 1.7em
 }
 
 h3 {
-  color: black;
+  /* color: black; */
   font-size: 1.5em;
 }
 
 .fade {
   display: inline-block;
-  font-family: 'Dancing Script', cursive; serif;
+  font-family: 'Dancing Script', cursive;
   animation: fadeIn linear 1.3s;
   -webkit-animation: fadeIn linear 1.3s;
   -moz-animation: fadeIn linear 1.3s;
