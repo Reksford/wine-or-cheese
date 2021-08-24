@@ -1,5 +1,10 @@
+/* Colors */
+/* 330300:Red 550400:Crimson AA7D39:Goldlight 7D5213:Goldmid 170E00:Golddark 000E0C:Tealdark */
 .App {
   text-align: center;
+  background-color: #330300;
+  text: #AA7D39;
+  text-shadow: 0px 0px 2px #000E0C;
 }
 
 .App-logo {
@@ -26,4 +31,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Game {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
