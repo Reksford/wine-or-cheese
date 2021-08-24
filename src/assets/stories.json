@@ -1,72 +1,117 @@
 {
   "storyA": {
     "title": "Awaken in the Wilderness",
-    "body": "",
+    "body": "Testing to see if A works.",
     "options": ["storyAA", "storyAB"]
-  }
+  },
+
   "storyAA": {
     "title": "",
     "body": "",
     "options": ["storyAAA", "storyAAB"]
-  }
+  },
   "storyAAA": {
     "title": "",
     "body": "",
-    "options": null
-  }
+    "options": ["endingAAA"]
+  },
+  "endingAAA": {
+    "title": "Next",
+    "body": "",
+    "options": []
+  },
   "storyAAB": {
     "title": "",
     "body": "",
-    "options": null
-  }
+    "options": ["endingAAB"]
+  },
+  "endingAAB": {
+    "title": "Next",
+    "body": "",
+    "options": []
+  },
+
   "storyAB": {
     "title": "",
     "body": "",
     "options": ["storyABA", "storyABB"]
-  }
+  },
   "storyABA": {
     "title": "",
     "body": "",
-    "options": null
-  }
+    "options": ["endingABA"]
+  },
+  "endingABA": {
+    "title": "Next",
+    "body": "",
+    "options": []
+  },
   "storyABB": {
     "title": "",
     "body": "",
-    "options": null
-  }
+    "options": ["endingABB"]
+  },
+  "endingABB": {
+    "title": "Next",
+    "body": "",
+    "options": []
+  },
+
   "storyB": {
     "title": "Driving Down a Lonely Road",
-    "body": "",
+    "body": "Testing to see if B works.",
     "options": ["storyBA", "storyBB"]
-  }
+  },
+
   "storyBA": {
     "title": "",
     "body": "",
     "options": ["storyBAA", "storyBAB"]
-  }
+  },
   "storyBAA": {
     "title": "",
     "body": "",
-    "options": null
-  }
+    "options": ["endingBAA"]
+  },
+  "endingBAA": {
+    "title": "Next",
+    "body": "",
+    "options": []
+  },
   "storyBAB": {
     "title": "",
     "body": "",
-    "options": null
-  }
+    "options": ["endingBAB"]
+  },
+  "endingBAB": {
+    "title": "Next",
+    "body": "",
+    "options": []
+  },
+
   "storyBB": {
     "title": "",
     "body": "",
     "options": ["storyBBA", "storyBBB"]
-  }
+  },
   "storyBBA": {
     "title": "",
     "body": "",
-    "options": null
-  }
+    "options": ["endingBBA"]
+  },
+  "endingBBA": {
+    "title": "Next",
+    "body": "",
+    "options": []
+  },
   "storyBBB": {
     "title": "",
     "body": "",
-    "options": null
+    "options": ["endingBBB"]
+  },
+  "endingBBB": {
+    "title": "Next",
+    "body": "",
+    "options": []
   }
 }
