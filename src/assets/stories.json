@@ -6,12 +6,12 @@
   },
 
   "storyAA": {
-    "title": "",
+    "title": "AA",
     "body": "",
     "options": ["storyAAA", "storyAAB"]
   },
   "storyAAA": {
-    "title": "",
+    "title": "AAA",
     "body": "",
     "options": ["endingAAA"]
   },
@@ -21,7 +21,7 @@
     "options": []
   },
   "storyAAB": {
-    "title": "",
+    "title": "AAB",
     "body": "",
     "options": ["endingAAB"]
   },
@@ -32,12 +32,12 @@
   },
 
   "storyAB": {
-    "title": "",
+    "title": "AB",
     "body": "",
     "options": ["storyABA", "storyABB"]
   },
   "storyABA": {
-    "title": "",
+    "title": "ABA",
     "body": "",
     "options": ["endingABA"]
   },
@@ -47,7 +47,7 @@
     "options": []
   },
   "storyABB": {
-    "title": "",
+    "title": "ABB",
     "body": "",
     "options": ["endingABB"]
   },
@@ -64,12 +64,12 @@
   },
 
   "storyBA": {
-    "title": "",
+    "title": "BA",
     "body": "",
     "options": ["storyBAA", "storyBAB"]
   },
   "storyBAA": {
-    "title": "",
+    "title": "BAA",
     "body": "",
     "options": ["endingBAA"]
   },
@@ -79,7 +79,7 @@
     "options": []
   },
   "storyBAB": {
-    "title": "",
+    "title": "BAB",
     "body": "",
     "options": ["endingBAB"]
   },
@@ -90,12 +90,12 @@
   },
 
   "storyBB": {
-    "title": "",
+    "title": "BB",
     "body": "",
     "options": ["storyBBA", "storyBBB"]
   },
   "storyBBA": {
-    "title": "",
+    "title": "BBA",
     "body": "",
     "options": ["endingBBA"]
   },
@@ -105,7 +105,7 @@
     "options": []
   },
   "storyBBB": {
-    "title": "",
+    "title": "BBB",
     "body": "",
     "options": ["endingBBB"]
   },

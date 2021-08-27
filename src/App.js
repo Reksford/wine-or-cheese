@@ -7,15 +7,11 @@ import Button from './components/button/button';
 import Display from './components/display/display';
 
 function App() {
-  const [ending, setEnding] = useState(false);
   const [story, setStory] = useState({body: null, options: []})
   const [options, setOptions] = useState([{title:"Wine", options: null}, {title:"Cheese", options: null}]);
-
-  const endClickHandler = () => {
-    setStory({body: "Well... Thanks for Playing!"});
-    setEnding(false);
+    // EndStory ({body: "You're Dead."});
     //options should be an empty array so no buttons thus soft locking on the end screen.
-  }
+    //maybe load in footer on ending "That's all, well.... Thanks for Playing!"
 
   const storyClickHandler = (dialogSelection) => {
     let newStory = ["storyA", "storyB"];
@@ -27,9 +23,10 @@ function App() {
         setOptions(nextOptions);
       } else {
         setStory(dialogSelection);
-        let nextOptions = dialogSelection.options
-        if (options.length === 0) {
-          setEnding(true);
+        let nextOptions = dialogSelection.options.map((el) => data[el]);
+        if (nextOptions.length === 0) {
+          console.log("handle ending")
+          setOptions(nextOptions);
         } else {
           setOptions(nextOptions);
         }
@@ -41,8 +38,7 @@ function App() {
       <div className="Game">
         <Display>{story.body}</Display>
         <div className="Buttons">
-        {/* ending ? <Button clicked={endClickHandler()}>The End</Button> : */
-        options.map((el) => <Button key={el.title} option={el} clicked={storyClickHandler}>{el.title}</Button>) }
+          {options.map((el) => <Button key={el.title} option={el} clicked={storyClickHandler}>{el.title}</Button>) }
         </div>
       </div>
       {/* footer */}
