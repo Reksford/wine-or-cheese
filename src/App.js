@@ -40,8 +40,10 @@ function App() {
     <div className="App">
       <div className="Game">
         <Display>{story.body}</Display>
+        <div className="Buttons">
         {/* ending ? <Button clicked={endClickHandler()}>The End</Button> : */
         options.map((el) => <Button key={el.title} option={el} clicked={storyClickHandler}>{el.title}</Button>) }
+        </div>
       </div>
       {/* footer */}
     </div>
