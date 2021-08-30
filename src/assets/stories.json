@@ -58,60 +58,60 @@
   },
 
   "Wine": {
-    "title": "Driving Down a Lonely Road",
-    "body": "Testing to see if B works.",
+    "title": "Down a Lonely Road",
+    "body": "It's late at night and you're headed down a dark and lonely road. Traveling with you is a trusty bottle of a fine vintage wine. Otherwise you are shrouded in mystery. Is home your destination or somewhere more exotic? Do you travel swiftly in a panic or leisurely and with purpose. Even your mode of transport has yet to be decided...",
     "options": ["storyWineA", "storyWineB"]
   },
 
   "storyWineA": {
-    "title": "BA",
-    "body": "",
+    "title": "A Fast Car",
+    "body": "Driving through the night after a day's work you make your way through a winding valley road. Your eyes peeled open and alert scan the road both ahead and behind. Without thinking your hand grabs the bottle in the seat next to you. In shock you look down to see the expensive Sauvignon there in your lap. What were you planning to do with it?",
     "options": ["storyWineAA", "storyWineAB"]
   },
   "storyWineAA": {
-    "title": "BAA",
-    "body": "",
+    "title": "Take a Sip",
+    "body": "You take a long sip straight from the bottle. It's a nice vintage! Bright lights appear in your rear view mirror. You spit wine all over the dash board. The cops are hot on your tail and there is no way for you to explain yourself.",
     "options": ["endingWineAA"]
   },
   "endingWineAA": {
-    "title": "Next",
-    "body": "",
+    "title": "Pull Over",
+    "body": "You crank the wheel hard to pull over on the shoulder. In your drunken stupor you shift the car too far, there's barely any room to pull over and no guard rail preventing you from careening off the cliff. The brief moment of weightlessness shared with your spilling wine is quickly smote by the explosion caused by the car's impact with the ground.",
     "options": []
   },
   "storyWineAB": {
-    "title": "BAB",
-    "body": "",
+    "title": "Chuck the Bottle",
+    "body": "You heave the bottle out the window and hear a soft clunk as knocks against dark form along the side of the road. You get the distinct feeling that you might have just hit something, or someone. You bring the car to a stop and get out to check on the dark figure lying beside an unbroken gleaming bottle of wine.",
     "options": ["endingWineAB"]
   },
   "endingWineAB": {
-    "title": "Next",
-    "body": "",
+    "title": "Poke the Figure",
+    "body": "The shadowy figure was a large black bear native to these parts. It stirs at your jabs and lets out an angry roar. You jump back in a fright and run to your car. For just a moment you hesitate and think to go back for your wine. At that moment the bear hits you with its mighty claws and you are dead.",
     "options": []
   },
 
   "storyWineB": {
-    "title": "BB",
-    "body": "",
+    "title": "Led Horse and Carriage",
+    "body": "The silent night is disrupted by the clapping of hooves and the jangling of glass as you steer your carriage down a deserted stretch or road. Your cargo is 80 bottles of wine stolen from a chateau owned by the vile Count Goubeaux. You're supposed to be taking it to a certain Buyer but are starting to have second thoughts.",
     "options": ["storyWineBA", "storyWineBB"]
   },
   "storyWineBA": {
-    "title": "BBA",
-    "body": "",
+    "title": "Complete the Job",
+    "body": "You ride on through the night and meet with your buyer in a dark secluded area outside of town. After a quick inspection of the shipment the Buyer asks to sample some of the wine to be sure if it is indeed the infamous vintage la Goubeaux. You produce a goblet from the carriage and gently uncork a bottle.",
     "options": ["endingWineBA"]
   },
   "endingWineBA": {
-    "title": "Next",
-    "body": "",
+    "title": "Serve the Wine",
+    "body": "The Buyer takes a deep sip from the goblet and then spits violently on the ground. \"What is this?\" he asks in disgust. It was fox piss, a glass full of fox piss. You're not sure how it could have gotten into the shipment of wine. Was the Count one step ahead of you all along? There's no time to explain yourself to the Buyer however as he pulls out a sword and runs you through. You are dead.",
     "options": []
   },
   "storyWineBB": {
-    "title": "BBB",
-    "body": "",
+    "title": "Keep the Wine",
+    "body": "You pull off the road into a thicket of trees and decide to sample some of your ill gotten goods. Uncorking a bottle, you take a big sip. It's a fine vintage! Truly a legendary wine, you finish off serveral bottles that night before settling down onto a soft grassy bed. The consequences of your actions far from your mind; you settle into a deep sleep.",
     "options": ["endingWineBB"]
   },
   "endingWineBB": {
-    "title": "Next",
-    "body": "",
+    "title": "Wake Up",
+    "body": "You awaken to the loud sounds of splintering wood, breaking glass, and frightened animals. Your horses have fled after a group of bears overturned your carriage. The bears have been smashing open the bottles of wine and drinking their fill. After a few drinks they get very angry and turn on you. You're dehydrated and hung over after last nights revelry and cannot put up much of a fight. The drunken bears easily smash your skull, killing you.",
     "options": []
   }
 }
