@@ -1,115 +1,115 @@
 {
-  "storyA": {
+  "Cheese": {
     "title": "Awaken in the Wilderness",
-    "body": "Testing to see if A works.",
-    "options": ["storyAA", "storyAB"]
+    "body": "You wake up in the wilderness on a bed of pine needles and rocks. Early morning mist obscures your vision and a low growl can be heard behind the chirping of birds. You're unsure of how you got here but you gather your resolve to survive. Checking your pockets you find only lint and cheese, how do you procede?",
+    "options": ["storyCheeseA", "storyCheeseB"]
   },
 
-  "storyAA": {
-    "title": "AA",
-    "body": "",
-    "options": ["storyAAA", "storyAAB"]
+  "storyCheeseA": {
+    "title": "Make a Shelter",
+    "body": "You decide to tame the wilderness and make a home for yourself here. With no tools or survival instincts though your options are limited. After an hour of fruitlessly trying to build a mud hut exhaustion begins to take it's toll. Sitting dejectedly in your dirt hole you realize you need more supplies and more stamina to finish your shelter.",
+    "options": ["storyCheeseAA", "storyCheeseAB"]
   },
-  "storyAAA": {
-    "title": "AAA",
-    "body": "",
-    "options": ["endingAAA"]
+  "storyCheeseAA": {
+    "title": "Gather Wood",
+    "body": "You punch a nearby tree for wood breaking every bone in your hand. The pain is overwhelming and your shouts and cries echo through the forest. You try to abate the pain and stop the bleeding.",
+    "options": ["endingCheeseAA"]
   },
-  "endingAAA": {
-    "title": "Next",
-    "body": "",
+  "endingCheeseAA": {
+    "title": "Smear Cheese on Your Hand",
+    "body": "A bear approaches out of the woods attracted by the smell of blood and cheese. You try to flee but stumble over the rough terrain. The bear swipes for your cheesy hand, taking most of your arm off with it. You quickly pass out from the shock never to awaken again.",
     "options": []
   },
-  "storyAAB": {
-    "title": "AAB",
-    "body": "",
-    "options": ["endingAAB"]
+  "storyCheeseAB": {
+    "title": "Eat the Cheese",
+    "body": "You settle into your makeshift trench and eat the cheese. It's sharp scent penetrates the air and salty flavor parches your throat. A group of bears approach, lured by the promising scent of Manchego, and are shocked to see you scarfing down their prize.",
+    "options": ["endingCheeseAB"]
   },
-  "endingAAB": {
-    "title": "Next",
-    "body": "",
-    "options": []
-  },
-
-  "storyAB": {
-    "title": "AB",
-    "body": "",
-    "options": ["storyABA", "storyABB"]
-  },
-  "storyABA": {
-    "title": "ABA",
-    "body": "",
-    "options": ["endingABA"]
-  },
-  "endingABA": {
-    "title": "Next",
-    "body": "",
-    "options": []
-  },
-  "storyABB": {
-    "title": "ABB",
-    "body": "",
-    "options": ["endingABB"]
-  },
-  "endingABB": {
-    "title": "Next",
-    "body": "",
+  "endingCheeseAB": {
+    "title": "Finish Off the Cheese",
+    "body": "You try to choke down the rest of the cheese but there is simply too much. This upsets the bears greatly. You throw the rind at their faces and begin to cough on the dry crumbly cheese in your throat. The bears attack and you find yourself quickly dead.",
     "options": []
   },
 
-  "storyB": {
+  "storyCheeseB": {
+    "title": "Find a Way Out",
+    "body": "Frightened by the horrors that you imagine might lurk in these woods you decided to try to make your way back to civilization. You take a big bite of cheese to start out your journey. A big bite. A fine old world Parmesan, hard to chew but tastful with crystalline salt. Finishing off the wedge, your thirst and fear drive the journey forward.",
+    "options": ["storyCheeseBA", "storyCheeseBB"]
+  },
+  "storyCheeseBA": {
+    "title": "Head North",
+    "body": "Your internal compass takes you up a mountain. You make your way up past the tree line to better survey the land, searching for signs of humanity. Your brow dampens with sweat as your senses dampen from exhaustion. You settle on a ridges edge to asses your options.",
+    "options": ["endingCheeseBA"]
+  },
+  "endingCheeseBA": {
+    "title": "Have a Snack",
+    "body": "Biting into a second wedge of dry tough Parmesan you choke on the sharp goodness. In your delirium you stumble and go head first down the ridge. Striking against several boulders on the way down your body eventually comes to a stop after losing your soul several hundred meters back.",
+    "options": []
+  },
+  "storyCheeseBB": {
+    "title": "Find a Stream",
+    "body": "You head down to a nearby stream to sate your thirst and drink greedily from the pure running water. Nearby bears are distracted from their fishing by your loud slurping. The bear quickly sense the pungent cheese stuffed into you pockets and give chase.",
+    "options": ["endingCheeseBB"]
+  },
+  "endingCheeseBB": {
+    "title": "Dive into the River",
+    "body": "To escape the bears you dive into the rushing stream. The bears have trained their entire lives to deftly catch salmon out these waters and find the prospect of an oversized cheesy trout to be simple prey. Easily tearing you out of the water, they take your cheese and leave you dead on the bank.",
+    "options": []
+  },
+
+  "Wine": {
     "title": "Driving Down a Lonely Road",
     "body": "Testing to see if B works.",
-    "options": ["storyBA", "storyBB"]
+    "options": ["storyWineA", "storyWineB"]
   },
 
-  "storyBA": {
+  "storyWineA": {
     "title": "BA",
     "body": "",
-    "options": ["storyBAA", "storyBAB"]
+    "options": ["storyWineAA", "storyWineAB"]
   },
-  "storyBAA": {
+  "storyWineAA": {
     "title": "BAA",
     "body": "",
-    "options": ["endingBAA"]
+    "options": ["endingWineAA"]
   },
-  "endingBAA": {
+  "endingWineAA": {
     "title": "Next",
     "body": "",
     "options": []
   },
-  "storyBAB": {
+  "storyWineAB": {
     "title": "BAB",
     "body": "",
-    "options": ["endingBAB"]
+    "options": ["endingWineAB"]
   },
-  "endingBAB": {
+  "endingWineAB": {
     "title": "Next",
     "body": "",
     "options": []
   },
 
-  "storyBB": {
+  "storyWineB": {
     "title": "BB",
     "body": "",
-    "options": ["storyBBA", "storyBBB"]
+    "options": ["storyWineBA", "storyWineBB"]
   },
-  "storyBBA": {
+  "storyWineBA": {
     "title": "BBA",
     "body": "",
-    "options": ["endingBBA"]
+    "options": ["endingWineBA"]
   },
-  "endingBBA": {
+  "endingWineBA": {
     "title": "Next",
     "body": "",
     "options": []
   },
-  "storyBBB": {
+  "storyWineBB": {
     "title": "BBB",
     "body": "",
-    "options": ["endingBBB"]
+    "options": ["endingWineBB"]
   },
-  "endingBBB": {
+  "endingWineBB": {
     "title": "Next",
     "body": "",
     "options": []
