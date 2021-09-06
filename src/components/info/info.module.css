@@ -2,7 +2,6 @@
   position: fixed;
   box-sizing: border-box;
   text-align: center;
-  cursor: pointer;
   border: 3px solid #AA7D39;
   color: black;
   background-color: white;
@@ -20,11 +19,20 @@
 
 .box span {
   position: relative;
+  cursor: pointer;
   top: -0.5em;
   left: calc(50%);
   color: lightgrey;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #7D5213;
+}
+
+a:active :visited{
+  color: #330300;
 }
 
 .graphic {

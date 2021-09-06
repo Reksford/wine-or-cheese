@@ -9,7 +9,7 @@ import InfoButton from './components/info/infoButton';
 import InfoBox from './components/info/infoBox';
 
 function App() {
-  const [wineOrCheese, setWineOrCheese] = useState('')
+  const [info, setInfo] = useState(false);
   const [story, setStory] = useState({body: "Wine or Cheese", options: ["Wine", "Cheese"]});
   const [options, setOptions] = useState([]);
     // EndStory ({body: "You're Dead."});
@@ -23,6 +23,11 @@ function App() {
       console.log("handle ending")
     }
     setOptions(nextOptions);
+  }
+
+  const infoClickHandler = () => {
+    setInfo(!info);
+    //pretty sure there was a correct way to flip state, will fix later
   }
 
   useEffect(() => {
@@ -44,6 +49,8 @@ function App() {
           </Button>) }
         </div>
       </div>
+      <InfoButton clicked={infoClickHandler} />
+      {info ? <InfoBox clicked={infoClickHandler} /> : null}
       {/* footer */}
     </div>
   );
