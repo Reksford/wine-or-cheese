@@ -1,6 +1,6 @@
 {
   "Cheese": {
-    "title": "Awaken in the Wilderness",
+    "title": "Cheese",
     "body": "You wake up in the wilderness on a bed of pine needles and rocks. Early morning mist obscures your vision and a low growl can be heard behind the chirping of birds. You're unsure of how you got here but you gather your resolve to survive. Checking your pockets you find only lint and cheese, how do you procede?",
     "options": ["storyCheeseA", "storyCheeseB"]
   },
@@ -58,7 +58,7 @@
   },
 
   "Wine": {
-    "title": "Down a Lonely Road",
+    "title": "Wine",
     "body": "It's late at night and you're headed down a dark and lonely road. Traveling with you is a trusty bottle of a fine vintage wine. Otherwise you are shrouded in mystery. Is home your destination or somewhere more exotic? Do you travel swiftly in a panic or leisurely and with purpose. Even your mode of transport has yet to be decided...",
     "options": ["storyWineA", "storyWineB"]
   },

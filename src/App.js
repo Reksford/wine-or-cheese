@@ -8,34 +8,29 @@ import Display from './components/display/display';
 
 function App() {
   const [wineOrCheese, setWineOrCheese] = useState('')
-  const [story, setStory] = useState({body: null, options: []});
-  const [options, setOptions] = useState([{title:"Wine", options: null}, {title:"Cheese", options: null}]);
+  const [story, setStory] = useState({body: "Wine or Cheese", options: ["Wine", "Cheese"]});
+  const [options, setOptions] = useState([]);
     // EndStory ({body: "You're Dead."});
     //options should be an empty array so no buttons thus soft locking on the end screen.
     //maybe load in footer on ending "That's all, well.... Thanks for Playing!"
 
   const storyClickHandler = (dialogSelection) => {
-      if (!dialogSelection.options) {
-        //pick story a || b and setStory setOptions
-        setWineOrCheese(dialogSelection.title);
-        let newStory = dialogSelection.title
-        setStory(data[newStory]);
-        let nextOptions = data[newStory].options.map((el) => data[el]);
-        setOptions(nextOptions);
-      } else {
-        setStory(dialogSelection);
-        let nextOptions = dialogSelection.options.map((el) => data[el]);
-        if (nextOptions.length === 0) {
-          console.log("handle ending")
-          setOptions(nextOptions);
-        } else {
-          setOptions(nextOptions);
-        }
-      }
+    setStory(dialogSelection);
+    let nextOptions = dialogSelection.options.map((el) => data[el]);
+    if (nextOptions.length === 0) {
+      console.log("handle ending")
+    }
+    setOptions(nextOptions);
   }
+
+  useEffect(() => {
+    let nextOptions = story.options.map((el) => data[el]);
+    setOptions(nextOptions);
+  }, [story]);
 
   return (
     <div className="App">
+      {/* header */}
       <div className="Game">
         <Display>{story.body}</Display>
         <div className="Buttons">
