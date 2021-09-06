@@ -1,0 +1,45 @@
+.box {
+  position: fixed;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  border: 3px solid #AA7D39;
+  color: black;
+  background-color: white;
+  padding: 1em;
+  max-width: 500px;
+  bottom: calc(0vh + 44px);
+  right: calc(0vw + 44px);
+  margin-left: 44px;
+}
+
+.box p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.box span {
+  position: relative;
+  top: -0.5em;
+  left: calc(50%);
+  color: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.graphic {
+  position: fixed;
+  box-sizing: border-box;
+  height:30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #AA7D39;
+  color: white;
+  border: 1px solid white;
+  top: calc(100vh - 50px);
+  left: calc(100vw - 50px);
+}

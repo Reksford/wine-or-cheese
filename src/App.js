@@ -5,6 +5,8 @@ import data from './assets/stories.json';
 
 import Button from './components/button/button';
 import Display from './components/display/display';
+import InfoButton from './components/info/infoButton';
+import InfoBox from './components/info/infoBox';
 
 function App() {
   const [wineOrCheese, setWineOrCheese] = useState('')
