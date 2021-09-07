@@ -26,8 +26,9 @@ function App() {
   }
 
   const infoClickHandler = () => {
-    setInfo(!info);
-    //pretty sure there was a correct way to flip state, will fix later
+    setInfo((prevState) => {
+      return !prevState;
+    });
   }
 
   useEffect(() => {
