@@ -1,4 +1,3 @@
-import react from 'react';
 import styles from './display.module.css';
 
 const Display = (props) => {

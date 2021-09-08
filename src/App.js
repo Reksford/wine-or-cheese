@@ -56,10 +56,12 @@ function App() {
 
   //This Effect updates endGame.status when reaching an ending story. Only needs to happen once.
   useEffect(() => {
-    if (story.type.match(/ending*/)) {
-      setEndGame({
-        ...endGame,
-        status: true
+    if (story.type.match('ending')) {
+      setEndGame((prevState) => {
+        return {
+          ...prevState,
+          status: true
+        }
       });
     }
   }, [story]);

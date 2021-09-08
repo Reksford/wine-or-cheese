@@ -1,8 +1,8 @@
 import styles from "./info.module.css";
 
 const InfoBox = (props) => {
-  const hatFilms = <a href="https://www.youtube.com/hatfilms" target="_blank">Hat Films</a>;
-  const wineOrCheese = <a href="https://youtu.be/DlrPdfHuhsw" target="_blank">video</a>;
+  const hatFilms = <a href="https://www.youtube.com/hatfilms" rel="noreferrer" target="_blank" >Hat Films</a>;
+  const wineOrCheese = <a href="https://youtu.be/DlrPdfHuhsw" rel="noreferrer" target="_blank" >video</a>;
 
   return (
   <div className={styles.box}>
