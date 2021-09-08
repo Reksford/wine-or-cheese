@@ -1,7 +1,8 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import data from './assets/stories.json';
+import Cookies from 'js-cookie';
 
+import data from './assets/stories.json';
 
 import Button from './components/button/button';
 import Display from './components/display/display';
@@ -20,7 +21,8 @@ function App() {
     setStory(dialogSelection);
     let nextOptions = dialogSelection.options.map((el) => data[el]);
     if (nextOptions.length === 0) {
-      console.log("handle ending")
+      console.log("handle ending");
+      Cookies.set('finished', true, {expires: 1});
     }
     setOptions(nextOptions);
   }
@@ -50,6 +52,9 @@ function App() {
           </Button>) }
         </div>
       </div>
+      { Cookies.get('finished') ?
+        <h1>COOKIE WORKING!!!!</h1> : <h1>What?</h1>
+      }
       <InfoButton clicked={infoClickHandler} />
       {info ? <InfoBox clicked={infoClickHandler} /> : null}
       {/* footer */}
