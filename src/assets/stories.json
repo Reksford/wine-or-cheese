@@ -113,5 +113,20 @@
     "title": "Wake Up",
     "body": "You awaken to the loud sounds of splintering wood, breaking glass, and frightened animals. Your horses have fled after a group of bears overturned your carriage. The bears have been smashing open the bottles of wine and drinking their fill. After a few drinks they get very angry and turn on you. You're dehydrated and hung over after last nights revelry and cannot put up much of a fight. The drunken bears easily smash your skull, killing you.",
     "options": []
+  },
+  "finished": {
+    "title": "I'm Sorry",
+    "body": "I'm sorry, It's just a one time thing.",
+    "options": []
+  },
+  "endGameA": {
+    "title": "Didn't Work Out",
+    "body": "Thank you for playing Wine or Cheese. It didn't really work out for you this time.",
+    "options": []
+  },
+  "endGameB": {
+    "title": "Piss Off",
+    "body": "Alright then. Go ahead now, piss off.",
+    "options": []
   }
 }

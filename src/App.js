@@ -13,18 +13,13 @@ function App() {
   const [info, setInfo] = useState(false);
   const [story, setStory] = useState({body: "Wine or Cheese", options: ["Wine", "Cheese"]});
   const [options, setOptions] = useState([]);
-    // EndStory ({body: "You're Dead."});
-    //options should be an empty array so no buttons thus soft locking on the end screen.
-    //maybe load in footer on ending "That's all, well.... Thanks for Playing!"
 
   const storyClickHandler = (dialogSelection) => {
-    setStory(dialogSelection);
-    let nextOptions = dialogSelection.options.map((el) => data[el]);
-    if (nextOptions.length === 0) {
-      console.log("handle ending");
-      Cookies.set('finished', true, {expires: 1});
+    if (Cookies.get('finished')) {
+      setStory(data['finished']);
+    } else {
+      setStory(dialogSelection);
     }
-    setOptions(nextOptions);
   }
 
   const infoClickHandler = () => {
@@ -35,6 +30,10 @@ function App() {
 
   useEffect(() => {
     let nextOptions = story.options.map((el) => data[el]);
+    if (nextOptions.length === 0) {
+      //Ending states have no options. So set cookie.
+      Cookies.set('finished', true, {expires: 1});
+    }
     setOptions(nextOptions);
   }, [story]);
 
@@ -52,9 +51,6 @@ function App() {
           </Button>) }
         </div>
       </div>
-      { Cookies.get('finished') ?
-        <h1>COOKIE WORKING!!!!</h1> : <h1>What?</h1>
-      }
       <InfoButton clicked={infoClickHandler} />
       {info ? <InfoBox clicked={infoClickHandler} /> : null}
       {/* footer */}
