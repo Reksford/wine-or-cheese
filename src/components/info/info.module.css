@@ -45,7 +45,7 @@ a:active :visited{
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
-  background-color: #AA7D39;
+  background-color: #AD6D00; /*Better Contrast with white i*/
   color: white;
   border: 1px solid white;
   top: calc(100vh - 50px);

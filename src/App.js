@@ -11,7 +11,7 @@ import InfoBox from './components/info/infoBox';
 
 function App() {
   const [info, setInfo] = useState(false);
-  const [story, setStory] = useState({body: "Wine or Cheese", options: ["Wine", "Cheese"], type:"init"});
+  const [story, setStory] = useState({body: "Wine or Cheese?", options: ["Wine", "Cheese"], type:"init"});
   const [options, setOptions] = useState([]);
   const [endGame, setEndGame] = useState({status: false, stage: 0});
 

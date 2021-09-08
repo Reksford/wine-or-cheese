@@ -27,11 +27,13 @@
 
 .Game {
   display: block;
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding-top: 1.5em;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 80%;
   flex: column;
   justify-content: center;
-  align-items: center;
 }
 
 .Buttons {

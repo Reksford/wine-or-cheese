@@ -1,11 +1,11 @@
 import styles from './display.module.css';
 
 const Display = (props) => {
-  if (!props.children) {
-    return <h1 style={styles} className="fade">Wine or Cheese</h1>
-  } else {
-  return <h3 style={styles} className="fade">{props.children}</h3>
-  }
+  return(
+    <div className={styles.container}>
+      <h1  className={styles.fade}>{props.children}</h1>
+    </div>
+  )
 }
 
 export default Display;
