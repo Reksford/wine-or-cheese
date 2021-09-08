@@ -1,130 +1,155 @@
 {
   "Cheese": {
+    "type": "start",
     "title": "Cheese",
     "body": "You wake up in the wilderness on a bed of pine needles and rocks. Early morning mist obscures your vision and a low growl can be heard behind the chirping of birds. You're unsure of how you got here but you gather your resolve to survive. Checking your pockets you find only lint and cheese, how do you procede?",
     "options": ["storyCheeseA", "storyCheeseB"]
   },
 
   "storyCheeseA": {
+    "type": "story",
     "title": "Make a Shelter",
     "body": "You decide to tame the wilderness and make a home for yourself here. With no tools or survival instincts though your options are limited. After an hour of fruitlessly trying to build a mud hut exhaustion begins to take it's toll. Sitting dejectedly in your dirt hole you realize you need more supplies and more stamina to finish your shelter.",
     "options": ["storyCheeseAA", "storyCheeseAB"]
   },
   "storyCheeseAA": {
+    "type": "story",
     "title": "Gather Wood",
     "body": "You punch a nearby tree for wood breaking every bone in your hand. The pain is overwhelming and your shouts and cries echo through the forest. You try to abate the pain and stop the bleeding.",
     "options": ["endingCheeseAA"]
   },
   "endingCheeseAA": {
+    "type": "ending",
     "title": "Smear Cheese on Your Hand",
     "body": "A bear approaches out of the woods attracted by the smell of blood and cheese. You try to flee but stumble over the rough terrain. The bear swipes for your cheesy hand, taking most of your arm off with it. You quickly pass out from the shock never to awaken again.",
     "options": []
   },
   "storyCheeseAB": {
+    "type": "story",
     "title": "Eat the Cheese",
     "body": "You settle into your makeshift trench and eat the cheese. It's sharp scent penetrates the air and salty flavor parches your throat. A group of bears approach, lured by the promising scent of Manchego, and are shocked to see you scarfing down their prize.",
     "options": ["endingCheeseAB"]
   },
   "endingCheeseAB": {
+    "type": "ending",
     "title": "Finish Off the Cheese",
     "body": "You try to choke down the rest of the cheese but there is simply too much. This upsets the bears greatly. You throw the rind at their faces and begin to cough on the dry crumbly cheese in your throat. The bears attack and you find yourself quickly dead.",
     "options": []
   },
 
   "storyCheeseB": {
+    "type": "story",
     "title": "Find a Way Out",
     "body": "Frightened by the horrors that you imagine might lurk in these woods you decided to try to make your way back to civilization. You take a big bite of cheese to start out your journey. A big bite. A fine old world Parmesan, hard to chew but tastful with crystalline salt. Finishing off the wedge, your thirst and fear drive the journey forward.",
     "options": ["storyCheeseBA", "storyCheeseBB"]
   },
   "storyCheeseBA": {
+    "type": "story",
     "title": "Head North",
     "body": "Your internal compass takes you up a mountain. You make your way up past the tree line to better survey the land, searching for signs of humanity. Your brow dampens with sweat as your senses dampen from exhaustion. You settle on a ridges edge to asses your options.",
     "options": ["endingCheeseBA"]
   },
   "endingCheeseBA": {
+    "type": "ending",
     "title": "Have a Snack",
     "body": "Biting into a second wedge of dry tough Parmesan you choke on the sharp goodness. In your delirium you stumble and go head first down the ridge. Striking against several boulders on the way down your body eventually comes to a stop after losing your soul several hundred meters back.",
     "options": []
   },
   "storyCheeseBB": {
+    "type": "story",
     "title": "Find a Stream",
     "body": "You head down to a nearby stream to sate your thirst and drink greedily from the pure running water. Nearby bears are distracted from their fishing by your loud slurping. The bear quickly sense the pungent cheese stuffed into you pockets and give chase.",
     "options": ["endingCheeseBB"]
   },
   "endingCheeseBB": {
+    "type": "ending",
     "title": "Dive into the River",
     "body": "To escape the bears you dive into the rushing stream. The bears have trained their entire lives to deftly catch salmon out these waters and find the prospect of an oversized cheesy trout to be simple prey. Easily tearing you out of the water, they take your cheese and leave you dead on the bank.",
     "options": []
   },
 
   "Wine": {
+    "type": "start",
     "title": "Wine",
     "body": "It's late at night and you're headed down a dark and lonely road. Traveling with you is a trusty bottle of a fine vintage wine. Otherwise you are shrouded in mystery. Is home your destination or somewhere more exotic? Do you travel swiftly in a panic or leisurely and with purpose. Even your mode of transport has yet to be decided...",
     "options": ["storyWineA", "storyWineB"]
   },
 
   "storyWineA": {
+    "type": "story",
     "title": "A Fast Car",
     "body": "Driving through the night after a day's work you make your way through a winding valley road. Your eyes peeled open and alert scan the road both ahead and behind. Without thinking your hand grabs the bottle in the seat next to you. In shock you look down to see the expensive Sauvignon there in your lap. What were you planning to do with it?",
     "options": ["storyWineAA", "storyWineAB"]
   },
   "storyWineAA": {
+    "type": "story",
     "title": "Take a Sip",
     "body": "You take a long sip straight from the bottle. It's a nice vintage! Bright lights appear in your rear view mirror. You spit wine all over the dash board. The cops are hot on your tail and there is no way for you to explain yourself.",
     "options": ["endingWineAA"]
   },
   "endingWineAA": {
+    "type": "ending",
     "title": "Pull Over",
     "body": "You crank the wheel hard to pull over on the shoulder. In your drunken stupor you shift the car too far, there's barely any room to pull over and no guard rail preventing you from careening off the cliff. The brief moment of weightlessness shared with your spilling wine is quickly smote by the explosion caused by the car's impact with the ground.",
     "options": []
   },
   "storyWineAB": {
+    "type": "story",
     "title": "Chuck the Bottle",
     "body": "You heave the bottle out the window and hear a soft clunk as knocks against dark form along the side of the road. You get the distinct feeling that you might have just hit something, or someone. You bring the car to a stop and get out to check on the dark figure lying beside an unbroken gleaming bottle of wine.",
     "options": ["endingWineAB"]
   },
   "endingWineAB": {
+    "type": "ending",
     "title": "Poke the Figure",
     "body": "The shadowy figure was a large black bear native to these parts. It stirs at your jabs and lets out an angry roar. You jump back in a fright and run to your car. For just a moment you hesitate and think to go back for your wine. At that moment the bear hits you with its mighty claws and you are dead.",
     "options": []
   },
 
   "storyWineB": {
+    "type": "story",
     "title": "Led Horse and Carriage",
     "body": "The silent night is disrupted by the clapping of hooves and the jangling of glass as you steer your carriage down a deserted stretch or road. Your cargo is 80 bottles of wine stolen from a chateau owned by the vile Count Goubeaux. You're supposed to be taking it to a certain Buyer but are starting to have second thoughts.",
     "options": ["storyWineBA", "storyWineBB"]
   },
   "storyWineBA": {
+    "type": "story",
     "title": "Complete the Job",
     "body": "You ride on through the night and meet with your buyer in a dark secluded area outside of town. After a quick inspection of the shipment the Buyer asks to sample some of the wine to be sure if it is indeed the infamous vintage la Goubeaux. You produce a goblet from the carriage and gently uncork a bottle.",
     "options": ["endingWineBA"]
   },
   "endingWineBA": {
+    "type": "ending",
     "title": "Serve the Wine",
     "body": "The Buyer takes a deep sip from the goblet and then spits violently on the ground. \"What is this?\" he asks in disgust. It was fox piss, a glass full of fox piss. You're not sure how it could have gotten into the shipment of wine. Was the Count one step ahead of you all along? There's no time to explain yourself to the Buyer however as he pulls out a sword and runs you through. You are dead.",
     "options": []
   },
   "storyWineBB": {
+    "type": "story",
     "title": "Keep the Wine",
     "body": "You pull off the road into a thicket of trees and decide to sample some of your ill gotten goods. Uncorking a bottle, you take a big sip. It's a fine vintage! Truly a legendary wine, you finish off serveral bottles that night before settling down onto a soft grassy bed. The consequences of your actions far from your mind; you settle into a deep sleep.",
     "options": ["endingWineBB"]
   },
   "endingWineBB": {
+    "type": "ending",
     "title": "Wake Up",
     "body": "You awaken to the loud sounds of splintering wood, breaking glass, and frightened animals. Your horses have fled after a group of bears overturned your carriage. The bears have been smashing open the bottles of wine and drinking their fill. After a few drinks they get very angry and turn on you. You're dehydrated and hung over after last nights revelry and cannot put up much of a fight. The drunken bears easily smash your skull, killing you.",
     "options": []
   },
   "finished": {
+    "type": "finish",
     "title": "I'm Sorry",
     "body": "I'm sorry, It's just a one time thing.",
     "options": []
   },
   "endGameA": {
+    "type": "postgame",
     "title": "Didn't Work Out",
     "body": "Thank you for playing Wine or Cheese. It didn't really work out for you this time.",
     "options": []
   },
   "endGameB": {
+    "type": "postgame",
     "title": "Piss Off",
     "body": "Alright then. Go ahead now, piss off.",
     "options": []

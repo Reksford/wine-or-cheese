@@ -11,8 +11,9 @@ import InfoBox from './components/info/infoBox';
 
 function App() {
   const [info, setInfo] = useState(false);
-  const [story, setStory] = useState({body: "Wine or Cheese", options: ["Wine", "Cheese"]});
+  const [story, setStory] = useState({body: "Wine or Cheese", options: ["Wine", "Cheese"], type:"init"});
   const [options, setOptions] = useState([]);
+  const [endGame, setEndGame] = useState({status: false, stage: 0});
 
   const storyClickHandler = (dialogSelection) => {
     if (Cookies.get('finished')) {
@@ -22,25 +23,51 @@ function App() {
     }
   }
 
+  const gameClickHandler = () => {
+    if (endGame.status) {
+      if (endGame.stage < 1) {
+        setStory(data['endGameA']);
+        setEndGame((prevState) => {
+          return {  ...prevState,
+                    stage: prevState.stage++
+                  }
+        });
+      } else {
+        setStory(data['endGameB']);
+      }
+    }
+  }
+
   const infoClickHandler = () => {
     setInfo((prevState) => {
       return !prevState;
     });
   }
 
+  //This Effect updates the buttons to be pressed and sets finished cookie
   useEffect(() => {
     let nextOptions = story.options.map((el) => data[el]);
-    if (nextOptions.length === 0) {
+    if (nextOptions.length === 0 && story.type.match('ending')) {
       //Ending states have no options. So set cookie.
       Cookies.set('finished', true, {expires: 1});
     }
     setOptions(nextOptions);
   }, [story]);
 
+  //This Effect updates endGame.status when reaching an ending story. Only needs to happen once.
+  useEffect(() => {
+    if (story.type.match(/ending*/)) {
+      setEndGame({
+        ...endGame,
+        status: true
+      });
+    }
+  }, [story]);
+
   return (
     <div className="App">
       {/* header */}
-      <div className="Game">
+      <div className="Game" onClick={gameClickHandler}>
         <Display>{story.body}</Display>
         <div className="Buttons">
           {options.map((el) => <Button
