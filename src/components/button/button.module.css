@@ -1,7 +1,7 @@
 .botan {
   box-sizing: border-box;
   min-height: 70px;
-  min-width: 140px;
+  min-width: 20%;
   text-align: center;
   box-shadow: 0px 3px 3px 2px #EAEAEA;
   border-radius: 8px;
@@ -12,6 +12,7 @@
   background-color: #000E0C;
   color: #AA7D39;
   border: 3px solid #7D5213;
+  margin: 0.5em;
 }
 
 .botan:hover,
@@ -22,4 +23,11 @@
 .botan:active {
   transform: scale(0.98);
   box-shadow: 0px 2px 2px 1px #EAEAEA;
+}
+
+@media screen and (max-width: 640px) {
+  .botan {
+    font-size: 1.4em;
+    width: 80%
+  }
 }

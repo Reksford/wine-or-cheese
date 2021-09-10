@@ -7,6 +7,7 @@ h1 {
   margin: 0;
   padding: 0;
   min-height: 65%;
+  max-height: 80%;
 }
 
 .fade {
@@ -16,6 +17,28 @@ h1 {
   -moz-animation: fadeIn linear 1.3s;
   -o-animation: fadeIn linear 1.3s;
   -ms-animation: fadeIn linear 1.3s;
+}
+
+.title {
+  font-size: 10em;
+}
+
+@media screen and (max-width: 1240px) {
+  .title {
+    font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 1.6em;
+  }
 }
 
 @keyframes fadeIn {

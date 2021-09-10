@@ -71,7 +71,7 @@ function App() {
     <div className="App">
       {/* header */}
       <div className="Game" onClick={gameClickHandler}>
-        <Display>{story.body}</Display>
+        <Display type={story.type}>{story.body}</Display>
         <div className="Buttons">
           {options.map((el) => <Button
             key={el.title}
