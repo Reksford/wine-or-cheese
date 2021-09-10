@@ -8,10 +8,11 @@ import Button from './components/button/button';
 import Display from './components/display/display';
 import InfoButton from './components/info/infoButton';
 import InfoBox from './components/info/infoBox';
+import Footer from './components/footer/footer';
 
 function App() {
   const [info, setInfo] = useState(false);
-  const [story, setStory] = useState({body: "Wine or Cheese?", options: ["Wine", "Cheese"], type:"init"});
+  const [story, setStory] = useState({body: "Wine or Cheese?", options: ["Wine", "Cheese"], type:"title"});
   const [options, setOptions] = useState([]);
   const [endGame, setEndGame] = useState({status: false, stage: 0});
 
@@ -82,7 +83,7 @@ function App() {
       </div>
       <InfoButton clicked={infoClickHandler} />
       {info ? <InfoBox clicked={infoClickHandler} /> : null}
-      {/* footer */}
+      <Footer />
     </div>
   );
 }

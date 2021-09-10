@@ -50,6 +50,6 @@ a:active :visited{
   background-color: #AD6D00; /*Better Contrast with white i*/
   color: white;
   border: 1px solid white;
-  top: calc(100vh - 50px);
+  top: calc(100vh - 1.7em); /*Roughly the size of the Footer*/
   left: calc(100vw - 50px);
 }
