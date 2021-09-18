@@ -146,12 +146,18 @@
     "type": "postgame",
     "title": "Didn't Work Out",
     "body": "Thank you for playing Wine or Cheese. It didn't really work out for you this time.",
-    "options": []
+    "next": "endGameB"
   },
   "endGameB": {
     "type": "postgame",
     "title": "Piss Off",
     "body": "Alright then. Go ahead now, piss off.",
-    "options": []
+    "next": "endGameC"
+  },
+  "endGameC": {
+    "type": "postgame",
+    "title": "Cheese or Wine",
+    "body": "Alright who's next? You there! Cheese or Wine?",
+    "Next": ""
   }
 }

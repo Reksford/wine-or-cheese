@@ -14,7 +14,7 @@ function App() {
   const [info, setInfo] = useState(false);
   const [story, setStory] = useState({body: "Wine or Cheese?", options: ["Wine", "Cheese"], type:"title"});
   const [options, setOptions] = useState([]);
-  const [endGame, setEndGame] = useState({status: false, stage: 0});
+  const [endGame, setEndGame] = useState(false);
 
   const storyClickHandler = (dialogSelection) => {
     if (Cookies.get('finished')) {
@@ -25,17 +25,25 @@ function App() {
   }
 
   const gameClickHandler = () => {
-    if (endGame.status) {
-      if (endGame.stage < 1) {
-        setStory(data['endGameA']);
-        setEndGame((prevState) => {
-          return {  ...prevState,
-                    stage: prevState.stage++
-                  }
+    if (endGame) {
+      if (story.type.match('ending')) {
+        setStory((prevState) => {
+          return {
+            ...prevState,
+            ...data['endGameA']
+          }
         });
-      } else {
-        setStory(data['endGameB']);
+      } else if (story.next[0]) {
+        setStory((prevState) => {
+          return {
+            ...prevState,
+            ...data[story.next]
+          }
+        });
       }
+    }
+    if(info) {
+      infoClickHandler();
     }
   }
 
@@ -48,8 +56,7 @@ function App() {
   //This Effect updates the buttons to be pressed and sets finished cookie
   useEffect(() => {
     let nextOptions = story.options.map((el) => data[el]);
-    if (nextOptions.length === 0 && story.type.match('ending')) {
-      //Ending states have no options. So set cookie.
+    if (story.type.match('ending')) {
       Cookies.set('finished', true, {expires: 1});
     }
     setOptions(nextOptions);
@@ -58,12 +65,7 @@ function App() {
   //This Effect updates endGame.status when reaching an ending story. Only needs to happen once.
   useEffect(() => {
     if (story.type.match('ending')) {
-      setEndGame((prevState) => {
-        return {
-          ...prevState,
-          status: true
-        }
-      });
+      setEndGame(true);
     }
   }, [story]);
 
